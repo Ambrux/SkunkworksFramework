@@ -1,0 +1,64 @@
+*.7z
+*.a
+*.d
+*.exe
+*.o
+*.tmp
+*.zip
+*.apk
+*.log
+
+# Visual Studio files
+*.code-workspace
+*.exp
+*.ilk
+*.opensdf
+*.pdb
+*.lib
+*.manifest
+*.sdf
+*.suo
+*.user
+*.vcxproj.filters
+*.lastbuildstate
+.vs/
+.vscode/
+Directory.Build.props
+Directory.Build.targets
+
+
+# Visual Studio project files
+/msvc-full-features/**/
+
+# Temporary CMakeFiles
+CMakeUserPresets.json
+out/
+
+# Visual Studio 2015
+/msvc-full-features/*db
+/msvc-full-features/ipch
+lnk*.tmp
+
+#Visual Studio 2017
+/msvc-full-features/PredictedInputCache_Debug_x64.dat
+
+# Visual Studio 2019
+**/enc_temp_folder/*
+
+# Temporary and backup files
+*.bak
+*.cbTemp
+*.sw?
+*~
+\#*
+gmon.out
+
+# System Files
+.DS_Store
+._.DS_Store
+Thumbs.db
+cscope.*
+tags
+
+**/bin/
+**/obj/
