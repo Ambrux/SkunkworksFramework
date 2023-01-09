@@ -1,0 +1,27 @@
+name: Question
+description: Ask a question
+labels: ["question", "review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill all the fields below to the best of your ability.
+
+  - type: textarea
+    id: question-field
+    attributes:
+      label: Question
+      description: Provide your question.
+      placeholder: Does this mod support some other mod?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context-field
+    attributes:
+      label: Context
+      description: |
+        **Optional** Provide context that you believe is useful to understand your request, such as examples from other mods, screenshots, or mockups.
+    validations:
+      required: false

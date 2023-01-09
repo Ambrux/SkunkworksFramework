@@ -1,0 +1,57 @@
+name: Bug
+description: Report a problem
+labels: ["bug", "review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill all the fields below to the best of your ability.
+
+  - type: textarea
+    id: description-field
+    attributes:
+      label: Describe the bug
+      description: Provide a concise description of the unintended interaction.
+      placeholder: Getting an exception when trying to perform some action.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-field
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the interaction.
+      placeholder: |
+        1. Select a pawn.
+        2. Right click on some interactive object.
+        3. Receive an exception in the log window.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-field
+    attributes:
+      label: Expected behavior
+      description: Provide what you believe to be the correct behavior instead of the bug.
+      placeholder: I expected right clicking the object to provide a menu.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: |
+        **Optional** Provide a screenshot of the setup required to produce the bug, or a demonstrative that visualizes the bug.
+    validations:
+      required: false
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: |
+        **Optional** Provide a copy of your log, including the stack trace.
+    validations:
+      required: false

@@ -1,0 +1,36 @@
+name: Enhancement
+description: Request an alteration to an existing feature. This is not for new features, see requirement for that.
+labels: ["enhancement", "review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill all the fields below to the best of your ability.
+
+  - type: textarea
+    id: current-field
+    attributes:
+      label: Current behavior
+      description: Provide a description of the current behavior related to your request.
+      placeholder: In order to perform some task, I need to right click on an object with just one pawn selected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: enhancement-field
+    attributes:
+      label: Desired behavior
+      description: Provide a description of how you would like the current behavior to change.
+      placeholder: I should be able to right click on an object with multiple pawns selected.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context-field
+    attributes:
+      label: Context
+      description: |
+        **Optional** Provide context that you believe is useful to understand your request, such as examples from other mods, screenshots, or mockups.
+    validations:
+      required: false

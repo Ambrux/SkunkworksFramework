@@ -1,0 +1,36 @@
+name: Requirement
+description: Request a new feature. This is not for changes to existing features, see enhancement for that.
+labels: ["requirement", "review"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill all the fields below to the best of your ability.
+
+  - type: textarea
+    id: problem-field
+    attributes:
+      label: Describe the problem
+      description: Provide a description of the issue you are encountering.
+      placeholder: Hyperweave cloth is too hard to acquire. Here are the current best ways to acquire hyperweave...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution-field
+    attributes:
+      label: Propose a solution
+      description: Provide a description of how you would like this mod to resolve the problem.
+      placeholder: Hyperweave should be craftable with a late-game recipe. This recipe should be...
+    validations:
+      required: true
+
+  - type: textarea
+    id: context-field
+    attributes:
+      label: Context
+      description: |
+        **Optional** Provide context that you believe is useful to understand your request, such as examples from other mods, screenshots, or mockups.
+    validations:
+      required: false
